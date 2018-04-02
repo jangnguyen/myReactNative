@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TextInput} from 'react-native';
 import {Image} from 'react-native';
 
 export default class App extends React.Component {
@@ -12,42 +12,16 @@ export default class App extends React.Component {
             <View style={styles.container}>
 
                 {/*Flexbox ghi trên nhánh Learning*/}
-                <View style={{flex: 1, flexDirection: 'column', justifyContent: 'space-between'}}>
-                    <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}}></View>
-                    <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}}></View>
-                    <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}}></View>
+                <View style={{
+                    flex: 1,
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}>
+                    <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}}/>
+                    <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}}/>
+                    <View style={{width: 50, height: 50, backgroundColor: 'steelblue'}}/>
                 </View>
-
-                {/* Vi du ve PROPS */}
-                <View style={styles.view1}>
-                    <Greeting name='Giang'/>
-                    <Greeting name='Huân'/>
-                    <Greeting name='Phương'/>
-                    {/*VI DU VE IMAGE*/}
-                    <Image source={pic} style={styles.image}/>
-
-                    {/*Vi du ve TEXT*/}
-                    <Text>Mở file App.js code trong đó và sẽ thấy điều kì diệu!</Text>
-                    <Text>Ahihi</Text>
-                </View>
-
-                {/* Vi du ve STATE*/}
-                <View style={styles.view2}>
-                    <Blink style={styles.red} text='I love to blink'/>
-                    <Blink style={styles.bigblue} text='Yes blinking is so great'/>
-                    <Blink style={[styles.bigblue, styles.red]} text='Why did they ever take this out of HTML'/>
-                    <Blink style={[styles.red, styles.bigblue]} text='Look at me look at me!!!'/>
-                </View>
-
-                {/*Ví dụ về style*/}
-                <View style={styles.view3}>
-                    <Text style={styles.red}>Dòng này có chớp chớp hay hok cà. Ko chớp và màu đỏ nhỏ</Text>
-                    <Text style={styles.bigblue}>Dòng này màu xanh bự bự nè</Text>
-                    <Text style={[styles.bigblue, styles.red]}>Dòng này màu đỏ bự</Text>
-                    <Text style={[styles.red, styles.bigblue]}>Dòng này thì màu xanh bự bự do bị chồng màu xanh lên mày
-                        đỏ</Text>
-                </View>
-
             </View>
         );
     }
