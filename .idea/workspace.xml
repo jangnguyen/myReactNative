@@ -19,11 +19,16 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+            <state relative-caret-position="378">
+              <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#169#1739#0" expanded="true" />
+                <element signature="e#172#197#0" expanded="true" />
+                <element signature="e#427#512#0" expanded="true" />
+                <element signature="e#575#627#0" expanded="true" />
+                <element signature="e#675#676#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+                <element signature="e#729#1197#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,12 +158,12 @@
       <updated>1522485420056</updated>
       <workItem from="1522485425824" duration="487000" />
       <workItem from="1522485950407" duration="93000" />
-      <workItem from="1522631266548" duration="26416000" />
+      <workItem from="1522631266548" duration="27788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26996000" />
+    <option name="totallyTimeSpent" value="28368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="725" y="23" width="1195" height="1177" extended-state="0" />
@@ -228,7 +233,12 @@
           <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#169#1739#0" expanded="true" />
+            <element signature="e#172#197#0" expanded="true" />
+            <element signature="e#427#512#0" expanded="true" />
+            <element signature="e#575#627#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#729#1197#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -242,11 +252,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+        <state relative-caret-position="378">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#169#1739#0" expanded="true" />
+            <element signature="e#172#197#0" expanded="true" />
+            <element signature="e#427#512#0" expanded="true" />
+            <element signature="e#575#627#0" expanded="true" />
+            <element signature="e#675#676#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#729#1197#0" expanded="true" />
           </folding>
         </state>
       </provider>

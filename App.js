@@ -1,42 +1,47 @@
 import React from 'react';
-import {StyleSheet, SectionList, FlatList, View, Text} from 'react-native';
+import {ActivityIndicator, FlatList, View, Text} from 'react-native';
 
 export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {isLoading: true}
+    }
+
+    componentDidMount() {
+        return fetch('https://facebook.github.io/react-native/movies.json')
+            .then((response) => response.json())
+            .then((responseJson) => {
+                this.setState({
+                    isLoading: false,
+                    dataSource: responseJson.movies,
+                }, function () {
+
+                });
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    }
 
     render() {
+        if (this.state.isLoading) {
+            return (
+                <View style={{flex: 1, padding: 64}}>
+                    <ActivityIndicator/>
+                </View>
+            )
+        }
+
         return (
-            <View style={styles.container}>
-                <SectionList
-                    sections={[
-                        {title: 'D', data: ['Devie']},
-                        {title: 'J', data: ['Jack', 'James', 'Jullian', 'Jimmy', 'Joey']},
-                        {title: 'V', data: ['Vox', 'Vine', 'Vouch']},
-                    ]}
-                    renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
-                    renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
-                    keyExtractor={(item, index) => index}/>
+            <View style={{flex: 1, padding: 24}}>
+                <FlatList
+                    data={this.state.dataSource}
+                    renderItem={({item}) => <Text>
+                        {item.title}, {item.releaseYear}
+                    </Text>}
+                    keyExtractor={(item, index) => index}
+                />
             </View>
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        paddingTop: 24,
-    },
-    item: {
-        padding: 10,
-        fontSize: 18,
-        height: 40,
-    },
-    sectionHeader: {
-        paddingTop: 2,
-        paddingLeft: 10,
-        paddingRight: 10,
-        paddingBottom: 2,
-        fontSize: 14,
-        fontWeight: 'bold',
-        backgroundColor: '#FEC32E'
-    }
-});
