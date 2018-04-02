@@ -11,7 +11,7 @@ export default class App extends React.Component {
 
             <View style={styles.container}>
 
-                {/*Flexbox*/}
+                {/*Flexbox ghi trên nhánh Learning*/}
                 <View style={{flex: 1, flexDirection: 'column', justifyContent: 'space-between'}}>
                     <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}}></View>
                     <View style={{width: 50, height: 50, backgroundColor: 'skyblue'}}></View>
